@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+$bg-color-secundario: #fff;
+$bg-color-terciario: #000000;
+$bg-color-azul: #1D2B64;
+$bg-color-variacion: #F8CDDA;
+
+*{
+    font-family: 'PT Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #ae00ff;
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background: #bd00ec;
+}
+
+a{
+    color: rgb(203, 167, 167);
+    list-style-type: none;
+    text-decoration: none;
+    }
+
+// BODY´S
+.body-inicio-registro{
+    color: $bg-color-secundario;
+    width: 100%;
+}
+
+.body-general{
+    background: url(../img/fondo3.jpg);
+    color: $bg-color-secundario;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    cursor: default;
+}
+
+
+.cont-cate{
+    .cont-ul{    
+        list-style-type: none;
+        display: flex;
+        font-size: 1.5em;
+        justify-content: space-evenly;
+        margin: 10px 0;
+        padding: 0;
+        li{
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.63);
+            }    
+            a{
+                color: white;              
+            }
+        }
+    }
+}
