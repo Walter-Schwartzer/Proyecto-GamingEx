@@ -204,6 +204,86 @@ footer {
     .cont-inicio-sesion .cont-back a:hover {
       opacity: 0.8; }
 
+.container-icon {
+  color: #000;
+  position: relative; }
+  .container-icon .icon-cart {
+    width: 40px;
+    height: 40px;
+    stroke: #000; }
+    .container-icon .icon-cart:hover {
+      cursor: pointer; }
+  .container-icon .count-products {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; }
+    .container-icon .count-products #contador-productos {
+      font-size: 12px; }
+  .container-icon .container-cart-products {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; }
+    .container-icon .container-cart-products .cart-product {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+      .container-icon .container-cart-products .cart-product .info-cart-product {
+        display: flex;
+        justify-content: space-between;
+        flex: 0.8; }
+        .container-icon .container-cart-products .cart-product .info-cart-product .titulo-producto-carrito {
+          font-size: 20px; }
+        .container-icon .container-cart-products .cart-product .info-cart-product .precio-producto-carrito {
+          font-weight: 700;
+          font-size: 20px;
+          margin-left: 10px; }
+        .container-icon .container-cart-products .cart-product .info-cart-product .cantidad-producto-carrito {
+          font-weight: 400;
+          font-size: 20px; }
+      .container-icon .container-cart-products .cart-product .icon-close {
+        width: 25px;
+        height: 25px; }
+        .container-icon .container-cart-products .cart-product .icon-close:hover {
+          stroke: red;
+          cursor: pointer; }
+
+.cart-total {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px; }
+
+.cart-total h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000; }
+
+.total-pagar {
+  color: #000;
+  font-size: 20px;
+  font-weight: 900; }
+
+.hidden-cart {
+  color: #000;
+  display: none; }
+
 #ctn-icon-search {
   right: 20px;
   height: 100%;
@@ -925,6 +1005,9 @@ footer {
   .cont-giftcard-compra .card-body-gift {
     margin-left: 30px; } }
 @media screen and (max-width: 500px) {
+  .navbar-toggler {
+    margin-left: 150px; }
+
   .cont-main .cont-inicio h2 {
     margin-top: 100px; }
 
@@ -944,6 +1027,9 @@ footer {
     padding: 1rem;
     margin: 0; } }
 @media screen and (max-width: 450px) {
+  .navbar-toggler {
+    margin-left: 120px; }
+
   .cont-cuenta .cont-cuenta-general {
     grid-template-columns: auto;
     grid-template-areas: "cuenta" "direccion" "carrito" "giftcard" "pagos" "mensajes" "deseados" "ayuda"; }
@@ -968,6 +1054,9 @@ footer {
   .cont-general-nosotros .cont-trabaja-nosotros input {
     width: 300px; } }
 @media screen and (max-width: 380px) {
+  .navbar-toggler {
+    margin-left: 80px; }
+
   .cont-carrito h2 {
     font-size: 31px;
     margin-left: -10px; }

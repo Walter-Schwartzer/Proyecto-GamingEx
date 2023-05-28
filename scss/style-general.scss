@@ -11,6 +11,112 @@
     width: $ancho;
     height: $alto;
 }
+// carrito
+.container-icon{
+    color: #000;
+    position: relative;
+    .icon-cart{
+        width: 40px;
+        height: 40px;
+        stroke: #000;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .count-products{
+        position: absolute;
+        top: 55%;
+        right: 0;
+    
+        background-color: #000;
+        color: #fff;
+        width: 25px;
+        height: 25px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        #contador-productos{
+            font-size: 12px;
+        }
+    }
+    .container-cart-products{
+        position: absolute;
+        top: 50px;
+        right: 0;
+    
+        background-color: #fff;
+        width: 400px;
+        z-index: 1;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+        border-radius: 10px;
+        .cart-product{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+        
+            border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+            .info-cart-product{
+                display: flex;
+                justify-content: space-between;
+                flex: 0.8;
+                .titulo-producto-carrito{
+                    font-size: 20px;
+                }
+                
+                .precio-producto-carrito{
+                    font-weight: 700;
+                    font-size: 20px;
+                    margin-left: 10px;
+                }
+                
+                .cantidad-producto-carrito{
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+            }
+            .icon-close{
+                width: 25px;
+                height: 25px;
+                &:hover{
+                    stroke: red;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+.cart-total{
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.total-pagar{
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    color: #000;
+    display: none;
+}
+
+////////////////////////////////////////////////////////7
 
 //buscador
 #ctn-icon-search{
@@ -941,6 +1047,9 @@
 
 
 @media screen and (max-width: 500px) {
+    .navbar-toggler{
+        margin-left: 150px;
+    }
     .cont-main{
         .cont-inicio{
             h2{
@@ -980,6 +1089,9 @@
 }
 
 @media screen and (max-width: 450px){
+    .navbar-toggler{
+        margin-left: 120px;
+    }
     .cont-cuenta{
         .cont-cuenta-general{
             grid-template-columns: auto;
@@ -1033,6 +1145,9 @@
 }
 
 @media screen and (max-width: 380px){
+    .navbar-toggler{
+        margin-left: 80px;
+    }
     .cont-carrito{
         h2{
             font-size: 31px;
